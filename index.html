@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="lib/anime.min.js" defer></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <!-- 🦢🦢🦢 -->
+    <!-- MAIN CONTAINER  -->
+    <main class="main-container">
+      <!-- HEADER LOOPSTUDIOS -->
+      <div class="wrapper-header">
+        <header class="header-loopstudios">
+          <nav class="header-nav">
+            <img
+              class="header-loopstudios__logo"
+              src="./images/logo.svg"
+              alt="logo"
+            />
+            <ul class="header-loopstudios-menu">
+              <li class="header-loopstudios-menu__item about">
+                <a
+                  class="header-loopstudios-menu__item--link item_hover"
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li class="header-loopstudios-menu__item careers">
+                <a
+                  class="header-loopstudios-menu__item--link item_hover"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+              <li class="header-loopstudios-menu__item events">
+                <a
+                  class="header-loopstudios-menu__item--link item_hover"
+                  href="#"
+                  >Events</a
+                >
+              </li>
+              <li class="header-loopstudios-menu__item products">
+                <a
+                  class="header-loopstudios-menu__item--link item_hover"
+                  href="#"
+                  >Products</a
+                >
+              </li>
+              <li class="header-loopstudios-menu__item support">
+                <a
+                  class="header-loopstudios-menu__item--link item_hover"
+                  href="#"
+                  >Support</a
+                >
+              </li>
+            </ul>
+            <div class="header-loopstudios__hamburger"></div>
+            <!-- <img
+              class="header-loopstudios__hamburger"
+              src="./images/icon-hamburger.svg"
+              alt="hamburger icon"
+            /> -->
+            <!-- <img
+              class="header-loopstudios__close"
+              src="./images/icon-close.svg"
+              alt="close icon"
+            /> -->
+            <!-- MODAL-loopstudios-SUB-MENU -->
+            <div class="header-loopstudios-sub-menu">
+              <ul>
+                <li class="header-loopstudios-sub-menu__item">
+                  <a
+                    class="header-loopstudios-sub-menu__item__link item_hover"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="header-loopstudios-sub-menu__item">
+                  <a
+                    class="header-loopstudios-sub-menu__item__link item_hover"
+                    href="#"
+                    >Careers</a
+                  >
+                </li>
+                <li class="header-loopstudios-sub-menu__item">
+                  <a
+                    class="header-loopstudios-sub-menu__item__link item_hover"
+                    href="#"
+                    >Events</a
+                  >
+                </li>
+                <li class="header-loopstudios-sub-menu__item">
+                  <a
+                    class="header-loopstudios-sub-menu__item__link item_hover"
+                    href="#"
+                    >Products</a
+                  >
+                </li>
+                <li class="header-loopstudios-sub-menu__item">
+                  <a
+                    class="header-loopstudios-sub-menu__item__link item_hover"
+                    href="#"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- MODAL SUB-MENU END -->
+          </nav>
+          <div class="header-heroe">Immersive experiences that deliver</div>
+        </header>
+      </div>
+      <!-- THE LEADER -->
+      <div class="the-leader">
+        <div class="the-leader-container-picture">
+          <picture class="the-leader-picture">
+            <source
+              class="the-leader-picture__source"
+              media="(min-width: 600px)"
+              srcset="./images/desktop/image-interactive.jpg"
+            />
+            <img
+              class="the-leader-picture__image"
+              src="./images/mobile/image-interactive.jpg"
+              alt="interactive icon mobile"
+            />
+          </picture>
+        </div>
+        <article class="the-leader-text">
+          <h2 class="the-leader-text__title">the leader in interactive vr</h2>
+          <p class="the-leader-text__description">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </article>
+      </div>
+      <!-- OUR CREATIONS -->
+      <div class="our-creations">
+        <div class="creations-container">
+          <h2 class="our-creations__title">our creations</h2>
+          <!-- ARTICLE CONTAINER -->
+          <div class="article-container">
+            <!-- DEEP EARTH ARTICLE -->
+            <article class="article-deep-earth">
+              <h2 class="article-deep-earth__title">deep earth</h2>
+              <picture class="article-deep-earth__picture">
+                <source
+                  class="article-deep-earth__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-deep-earth.jpg"
+                />
+                <img
+                  class="article-deep-earth__picture--mobile"
+                  src="./images/mobile/image-deep-earth.jpg"
+                  alt="deep earh icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- NIGHT ARCADE ARTICLE -->
+            <article class="article-night-arcade">
+              <h2 class="article-night-arcade__title">night arcade</h2>
+              <picture class="article-night-arcade__picture">
+                <source
+                  class="article-night-arcade__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-night-arcade.jpg"
+                />
+                <img
+                  class="article-night-arcade__picture--mobile"
+                  src="./images/mobile/image-night-arcade.jpg"
+                  alt="night arcade icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- SOCCER ARTICLE -->
+            <article class="article-soccer">
+              <h2 class="article-soccer__title">soccer team vr</h2>
+              <picture class="article-soccer__picture">
+                <source
+                  class="article-soccer__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-soccer-team.jpg"
+                />
+                <img
+                  class="article-soccer__picture--mobile"
+                  src="./images/mobile/image-soccer-team.jpg"
+                  alt="soccer team icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- THE GRID ARTICLE -->
+            <article class="article-the-grid">
+              <h2 class="article-the-grid__title">the grid</h2>
+              <picture class="article-the-grid__picture">
+                <source
+                  class="article-the-grid__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-grid.jpg"
+                />
+                <img
+                  class="article-the-grid__picture--mobile"
+                  src="./images/mobile/image-grid.jpg"
+                  alt="grid icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- FROM UP ARTICLE -->
+            <article class="article-from-up">
+              <h2 class="article-from-up__title">from up above vr</h2>
+              <picture class="article-from-up__picture">
+                <source
+                  class="article-from-up__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-from-above.jpg"
+                />
+                <img
+                  class="article-from-up__picture--mobile"
+                  src="./images/mobile/image-from-above.jpg"
+                  alt="from above icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- POCKET BOREALIS ARTICLE -->
+            <article class="article-pocket-borealis">
+              <h2 class="article-pocket-borealis__title">pocket borealis</h2>
+              <picture class="article-pocket-borealis__picture">
+                <source
+                  class="article-pocket-borealis__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-pocket-borealis.jpg"
+                />
+                <img
+                  class="article-pocket-borealis__picture--mobile"
+                  src="./images/mobile/image-pocket-borealis.jpg"
+                  alt="pocket borealis icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- THE CURIOSITY ARTICLE -->
+            <article class="article-the-curiosity">
+              <h2 class="article-the-curiosity__title">the curiosity</h2>
+              <picture class="article-the-curiosity__picture">
+                <source
+                  class="article-the-curiosity__picture--desktop"
+                  media="(min-width: 600px)"
+                  srcset="./images/desktop/image-curiosity.jpg"
+                />
+                <img
+                  class="article-the-curiosity__picture--mobile"
+                  src="./images/mobile/image-curiosity.jpg"
+                  alt="curiosity icon mobile"
+                />
+              </picture>
+            </article>
+            <!-- MAKE IT ARTICLE -->
+            <article class="article-make-it">
+              <h2 class="article-make-it__title">make it fisheye</h2>
+              <picture class="article-make-it__picture">
+                <source
+                  class="article-make-it__picture--desktop"
+                  media="(min-width:
+                600px)"
+                  srcset="./images/desktop/image-fisheye.jpg"
+                />
+                <img
+                  class="article-make-it__picture--mobile"
+                  src="./images/mobile/image-fisheye.jpg"
+                  alt="fisheye icon mobile"
+                />
+              </picture>
+            </article>
+          </div>
+          <!-- BUTTON -->
+          <button class="our-creations__button">see all</button>
+        </div>
+      </div>
+      <!-- FOOTER WEB -->
+      <div class="footer-web">
+        <!-- LEFT -->
+        <div class="left">
+          <img class="left__img" src="./images/logo.svg" alt="logo" />
+          <ul class="left__list">
+            <li class="left__list--item">
+              <a class="left__list--item__link item_hover" href="#">About</a>
+            </li>
+            <li class="left__list--item">
+              <a class="left__list--item__link item_hover" href="#">Careers</a>
+            </li>
+            <li class="left__list--item">
+              <a class="left__list--item__link item_hover" href="#">Events</a>
+            </li>
+            <li class="left__list--item">
+              <a class="left__list--item__link item_hover" href="#">Products</a>
+            </li>
+            <li class="left__list--item">
+              <a class="left__list--item__link item_hover" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+        <!-- RIGHT -->
+        <div class="right">
+          <div class="right__social-networks">
+            <a class="right__social-networks__img item_hover" href="#">
+              <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            </a>
+            <a class="right__social-networks__img item_hover" href="#">
+              <img src="./images/icon-twitter.svg" alt="twitter icon" />
+            </a>
+            <a class="right__social-networks__img item_hover" href="#">
+              <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
+            </a>
+            <a class="right__social-networks__img item_hover" href="#">
+              <img src="./images/icon-instagram.svg" alt="instagram icon" />
+            </a>
+          </div>
+          <p class="right__rights">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Pablo Belda</a>.
+      </footer>
+    </main>
+
+    <!-- OWN JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

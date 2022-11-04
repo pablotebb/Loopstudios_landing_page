@@ -1,0 +1,84 @@
+@use "variables" as v;
+
+@mixin article_snap_text(
+  $Font-size-title: 1.8em,
+  $Font-size-description: 0.8em,
+  $P_title_up: 1.25rem,
+  $P_title_sides: 0.625rem,
+  $P_title_down: 1.25rem,
+  $P_description_up: 1.25rem,
+  $P_description_sides: 1.875rem,
+  $P_description_down: 1.25rem,
+  $Text-align: center
+) {
+  background-color: v.$White;
+  &__title {
+    font-size: $Font-size-title;
+    padding: $P_title_up $P_title_sides $P_title_down;
+    text-align: $Text-align;
+    text-transform: uppercase;
+    color: v.$Very-Dark-Gray;
+    font-weight: lighter;
+    font-family: v.$Font-family-josfin;
+  }
+  &__description {
+    font-size: $Font-size-description;
+    padding: $P_description_up $P_description_sides $P_description_down;
+    text-align: $Text-align;
+    color: v.$Dark-Gray;
+  }
+}
+
+@mixin article_creations(
+  $Width: 10rem,
+  $Top: 2.125rem,
+  $Left: 2.375rem,
+  $Font-size: 2em
+) {
+  &__title {
+    // border: 1px solid red;
+    position: absolute;
+    top: $Top;
+    left: $Left;
+    font-size: $Font-size;
+    font-family: v.$Font-family-josfin;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: v.$White;
+    width: $Width;
+    transition: all 0.3s ease-in-out;
+  }
+  &__picture {
+    &--desktop {
+      // border: 5px solid green;
+    }
+    &--mobile {
+      // border: 1px solid red;
+      width: 85%;
+      display: block;
+      margin: 1.25rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+@mixin sleep_hover() {
+  &::after {
+    width: 50%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 15px;
+    bottom: -4px;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 0.3s ease 0s;
+    background-color: v.$White;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}

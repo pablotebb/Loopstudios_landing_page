@@ -1,0 +1,22 @@
+@use "initial";
+@use "footer";
+@use "variables" as v;
+@use "mixins" as m;
+@use "header_loopstudios";
+@use "the_leader";
+@use "our_creations";
+@use "footer_web";
+
+.main-container {
+  // border: 8px solid red;
+  min-width: v.$Width-mobile;
+  max-width: 100vw;
+  min-height: v.$Height-mobile;
+  margin: 0 auto 3.75rem;
+  @media (min-width: v.$Width-media) {
+    // border: 8px solid blue;
+    max-width: v.$Width-desktop;
+    width: 100vw;
+    min-height: v.$Height-desktop;
+  }
+}

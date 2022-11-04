@@ -1,0 +1,27 @@
+@use "variables" as v;
+
+.attribution {
+  position: absolute;
+  top: 212.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 3.75rem;
+  @media (min-width: 25.8125rem) {
+    top: 225rem;
+  }
+  @media (min-width: 30.0625rem) {
+    display: none;
+  }
+  @media (min-width: v.$Width-maxim) {
+    display: flex;
+    flex-direction: row;
+    top: 212.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 3.75rem;
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
